@@ -11,7 +11,8 @@ import styled from 'styled-components';
 const Form = styled.form`
   display: flex;
   flex-wrap: wrap;
-  max-width: 600px;
+  max-width: 450px;
+  width: 100%;
 
   .MuiFormControl-root {
     margin: 10px 5px !important;

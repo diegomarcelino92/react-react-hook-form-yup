@@ -1,7 +1,7 @@
 {
   "env": {
     "browser": true,
-    "es2021": true,
+    "es2020": true,
     "node": true
   },
   "extends": [
@@ -20,7 +20,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "plugins": ["react", "@typescript-eslint", "prettier", "react-hooks"],
   "rules": {
     "import/extensions": ["error", "never", {}],
     "prettier/prettier": "error",
@@ -35,7 +35,8 @@
         "html": true
       }
     ],
-    "react/prop-types": [2, { "ignore": ["children"] }]
+    "react/prop-types": [2, { "ignore": ["children"] }],
+    "react/require-default-props": [0]
   },
   "settings": {
     "import/resolver": {
